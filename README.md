@@ -1,63 +1,57 @@
-# TeslaMate
-
-[![CI](https://github.com/teslamate-org/teslamate/actions/workflows/elixir.yml/badge.svg)](https://github.com/teslamate-org/teslamate/actions/workflows/elixir.yml)
-[![Publish Docker images](https://github.com/teslamate-org/teslamate/actions/workflows/buildx.yml/badge.svg)](https://github.com/teslamate-org/teslamate/actions/workflows/buildx.yml)
-[![](https://coveralls.io/repos/github/teslamate-org/teslamate/badge.svg?branch=master)](https://coveralls.io/github/teslamate-org/teslamate?branch=master)
-[![](https://img.shields.io/docker/v/teslamate/teslamate/latest)](https://hub.docker.com/r/teslamate/teslamate)
-[![](https://img.shields.io/docker/image-size/teslamate/teslamate/latest)](https://hub.docker.com/r/teslamate/teslamate)
-[![](https://img.shields.io/docker/pulls/teslamate/teslamate?color=%23099cec)](https://hub.docker.com/r/teslamate/teslamate)
-
-A powerful, self-hosted data logger for your Tesla.
-
-- Written in **[Elixir](https://elixir-lang.org/)**
-- Data is stored in a **Postgres** database
-- Visualization and data analysis with **Grafana**
-- Vehicle data is published to a local **MQTT** Broker
-
-## Documentation
-
-The documentation is available at [docs.teslamate.org](https://docs.teslamate.org/).
-
-## Features
-
-**Dashboards**
-
-- [Drive and charging reports](https://docs.teslamate.org/docs/screenshots#charging-details)
-- [Driving efficiency report](https://docs.teslamate.org/docs/screenshots#efficiency)
-- [Consumption (net / gross)](https://docs.teslamate.org/docs/screenshots#efficiency)
-- [Charge energy added vs energy used](https://docs.teslamate.org/docs/screenshots#charges)
-- [Vampire drain](https://docs.teslamate.org/docs/screenshots#vampire-drain)
-- [Projected 100% range (battery degradation)](https://docs.teslamate.org/docs/screenshots#projected-range)
-- [Charging Stats](https://docs.teslamate.org/docs/screenshots#charging-stats)
-- [Drive Stats](https://docs.teslamate.org/docs/screenshots#drive-stats)
-- [History of installed updates](https://docs.teslamate.org/docs/screenshots#updates)
-- [See when your car was online or asleep](https://docs.teslamate.org/docs/screenshots#states)
-- [Lifetime driving map](https://docs.teslamate.org/docs/screenshots/#lifetime-driving-map)
-- [Visited addresses](https://docs.teslamate.org/docs/screenshots/#visited-addresses)
-- [Battery Health](https://docs.teslamate.org/docs/screenshots/#battery-health)
-
-**General**
-
-- High precision drive data recording
-- No additional vampire drain: the car will fall asleep as soon as possible
-- Automatic address lookup
-- Easy integration into Home Assistant (via MQTT)
-- Easy integration into Node-Red & Telegram (via MQTT)
-- Geo-fencing feature to create custom locations
-- Supports multiple vehicles per Tesla Account
-- Charge cost tracking
-- Import from TeslaFi and tesla-apiscraper
-
-## Screenshots
-
-![Drive Details](/website/static/screenshots/drive.png)
-![Web Interface](/website/static/screenshots/web_interface.png)
-
-<p align="center">
-  <strong><a href="https://docs.teslamate.org/docs/screenshots">MORE SCREENSHOTS</a></strong>
+<div class="Box-sc-g0xbh4-0 bJMeLZ js-snippet-clipboard-copy-unpositioned" data-hpc="true"><article class="markdown-body entry-content container-lg" itemprop="text"><div class="markdown-heading" dir="auto"><h1 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">特斯拉伴侣</font></font></h1><a id="user-content-teslamate" class="anchor" aria-label="永久链接：特斯拉伴侣" href="#teslamate"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><a href="https://github.com/teslamate-org/teslamate/actions/workflows/elixir.yml"><img src="https://github.com/teslamate-org/teslamate/actions/workflows/elixir.yml/badge.svg" alt="CI" style="max-width: 100%;"></a>
+<a href="https://github.com/teslamate-org/teslamate/actions/workflows/buildx.yml"><img src="https://github.com/teslamate-org/teslamate/actions/workflows/buildx.yml/badge.svg" alt="发布 Docker 镜像" style="max-width: 100%;"></a>
+<a href="https://coveralls.io/github/teslamate-org/teslamate?branch=master" rel="nofollow"><img src="https://camo.githubusercontent.com/347bee44ca499d4b10912bd082abec964112133d0992cd829693f3120c94c3c0/68747470733a2f2f636f766572616c6c732e696f2f7265706f732f6769746875622f7465736c616d6174652d6f72672f7465736c616d6174652f62616467652e7376673f6272616e63683d6d6173746572" alt="" data-canonical-src="https://coveralls.io/repos/github/teslamate-org/teslamate/badge.svg?branch=master" style="max-width: 100%;"></a>
+<a href="https://hub.docker.com/r/teslamate/teslamate" rel="nofollow"><img src="https://camo.githubusercontent.com/93595e5603ed58f304aa59c15c0f0b78aa4c45da9400d8a35df7c22cbc5a86a3/68747470733a2f2f696d672e736869656c64732e696f2f646f636b65722f762f7465736c616d6174652f7465736c616d6174652f6c6174657374" alt="" data-canonical-src="https://img.shields.io/docker/v/teslamate/teslamate/latest" style="max-width: 100%;"></a>
+<a href="https://hub.docker.com/r/teslamate/teslamate" rel="nofollow"><img src="https://camo.githubusercontent.com/8c6c774b45d0eb8b396ae891277d908588d3a32695f25cfb052f78e698cc53b1/68747470733a2f2f696d672e736869656c64732e696f2f646f636b65722f696d6167652d73697a652f7465736c616d6174652f7465736c616d6174652f6c6174657374" alt="" data-canonical-src="https://img.shields.io/docker/image-size/teslamate/teslamate/latest" style="max-width: 100%;"></a>
+<a href="https://hub.docker.com/r/teslamate/teslamate" rel="nofollow"><img src="https://camo.githubusercontent.com/825e098e759fad6efce30b07491a9541d540d05820258020556f42a2d7b55d31/68747470733a2f2f696d672e736869656c64732e696f2f646f636b65722f70756c6c732f7465736c616d6174652f7465736c616d6174653f636f6c6f723d253233303939636563" alt="" data-canonical-src="https://img.shields.io/docker/pulls/teslamate/teslamate?color=%23099cec" style="max-width: 100%;"></a></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">适用于 Tesla 的功能强大的自托管数据记录器。</font></font></p>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">写在</font></font><strong><a href="https://elixir-lang.org/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Elixir中</font></font></a></strong></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">数据存储在</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Postgres</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">数据库中</font></font></li>
+<li><font style="vertical-align: inherit;"><strong><font style="vertical-align: inherit;">使用Grafana</font></strong><font style="vertical-align: inherit;">进行可视化和数据分析</font></font><strong><font style="vertical-align: inherit;"></font></strong></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">车辆数据发布到本地</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">MQTT</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Broker</font></font></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文档</font></font></h2><a id="user-content-documentation" class="anchor" aria-label="永久链接：文档" href="#documentation"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">该文档可在</font></font><a href="https://docs.teslamate.org/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">docs.teslamate.org</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">获取。</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">特征</font></font></h2><a id="user-content-features" class="anchor" aria-label="永久链接：特点" href="#features"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">仪表板</font></font></strong></p>
+<ul dir="auto">
+<li><a href="https://docs.teslamate.org/docs/screenshots#charging-details" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">行驶和充电报告</font></font></a></li>
+<li><a href="https://docs.teslamate.org/docs/screenshots#efficiency" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">驾驶效率报告</font></font></a></li>
+<li><a href="https://docs.teslamate.org/docs/screenshots#efficiency" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">消费（净/毛）</font></font></a></li>
+<li><a href="https://docs.teslamate.org/docs/screenshots#charges" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">添加的充电能量与使用的能量</font></font></a></li>
+<li><a href="https://docs.teslamate.org/docs/screenshots#vampire-drain" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">吸血鬼排水沟</font></font></a></li>
+<li><a href="https://docs.teslamate.org/docs/screenshots#projected-range" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">预计 100% 范围（电池退化）</font></font></a></li>
+<li><a href="https://docs.teslamate.org/docs/screenshots#charging-stats" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">充电统计</font></font></a></li>
+<li><a href="https://docs.teslamate.org/docs/screenshots#drive-stats" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">驱动器统计</font></font></a></li>
+<li><a href="https://docs.teslamate.org/docs/screenshots#updates" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安装更新的历史记录</font></font></a></li>
+<li><a href="https://docs.teslamate.org/docs/screenshots#states" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">查看您的汽车何时在线或休眠</font></font></a></li>
+<li><a href="https://docs.teslamate.org/docs/screenshots/#lifetime-driving-map" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">一生驾驶地图</font></font></a></li>
+<li><a href="https://docs.teslamate.org/docs/screenshots/#visited-addresses" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">访问过的地址</font></font></a></li>
+<li><a href="https://docs.teslamate.org/docs/screenshots/#battery-health" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">电池健康状况</font></font></a></li>
+</ul>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">一般的</font></font></strong></p>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">高精度驱动数据记录</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">没有额外的吸血鬼排水管：汽车会尽快入睡</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">自动地址查找</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">轻松集成到 Home Assistant（通过 MQTT）</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">轻松集成到 Node-Red 和 Telegram（通过 MQTT）</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用于创建自定义位置的地理围栏功能</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">每个 Tesla 帐户支持多辆车</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">收费成本跟踪</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">从 TeslaFi 和 tesla-apiscraper 导入</font></font></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">截图</font></font></h2><a id="user-content-screenshots" class="anchor" aria-label="永久链接：屏幕截图" href="#screenshots"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="/teslamate-org/teslamate/blob/master/website/static/screenshots/drive.png"><img src="/teslamate-org/teslamate/raw/master/website/static/screenshots/drive.png" alt="驱动器详细信息" style="max-width: 100%;"></a>
+<a target="_blank" rel="noopener noreferrer" href="/teslamate-org/teslamate/blob/master/website/static/screenshots/web_interface.png"><img src="/teslamate-org/teslamate/raw/master/website/static/screenshots/web_interface.png" alt="网页界面" style="max-width: 100%;"></a></p>
+<p align="center" dir="auto">
+  <strong><a href="https://docs.teslamate.org/docs/screenshots" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">更多屏幕截图</font></font></a></strong>
 </p>
-
-## Credits
-
-- Authors: Adrian Kumpf – [List of contributors](https://github.com/teslamate-org/teslamate/graphs/contributors)
-- Distributed under MIT License
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">制作人员</font></font></h2><a id="user-content-credits" class="anchor" aria-label="永久链接：学分" href="#credits"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">作者： Adrian Kumpf –</font></font><a href="https://github.com/teslamate-org/teslamate/graphs/contributors"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">贡献者列表</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">根据 MIT 许可分发</font></font></li>
+</ul>
+</article></div>
